@@ -1,5 +1,4 @@
-import 'package:meta/meta.dart';
-import 'dart:convert';
+import 'package:pokemons_app/models/models.dart';
 
 class PokemonResponse {
   List<Ability> abilities;

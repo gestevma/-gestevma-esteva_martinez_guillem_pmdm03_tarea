@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pokemons_app/models/models.dart';
-import 'package:pokemons_app/widgets/widgets.dart';
+import 'package:pokemons_app/providers/providers.dart';
 
 class DetailsScreen extends StatelessWidget {
   final List<PokemonEntry> pokemonEntries;
@@ -38,7 +38,6 @@ class DetailsScreen extends StatelessWidget {
                     pokemonEntries: pokemonEntries,
                     pokemon: pokemon,
                     description: description),
-                CastingCards(),
               ],
             ),
           ),
@@ -105,9 +104,8 @@ class _PosterAndTitile extends StatelessWidget {
 
     String pokemonName = pokemon != null ? pokemon!.name : "";
 
-    String pokemonImagePixel = pokemon != null
-        ? pokemon!.imagePixel
-        : "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/1.png";
+    String pokemonImagePixel =
+        pokemon != null ? pokemon!.imagePixel : "no-available-image";
 
     List<String> pokemonTypesImages =
         pokemon != null ? pokemon!.typesImages : [];

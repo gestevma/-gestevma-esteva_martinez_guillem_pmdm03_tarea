@@ -1,7 +1,8 @@
-import 'dart:convert' as convert;
+import 'package:pokemons_app/models/models.dart';
 
+//Classe que permet guardar la ingormació d'un pokemon
 class Pokemon {
-  int? entry = 0;
+  int entry = 0;
   String name = "";
   String image = "";
   String imagePixel = "";
@@ -11,8 +12,4 @@ class Pokemon {
 
   Pokemon(this.entry, this.name, this.image, this.imagePixel, this.typesNames,
       this.typesImages, this.baseStats);
-
-  String getPokemonImage() {
-    return this.image;
-  }
 }

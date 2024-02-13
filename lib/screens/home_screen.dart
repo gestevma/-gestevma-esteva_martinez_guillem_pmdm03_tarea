@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pokemons_app/models/models.dart';
-import 'package:pokemons_app/providers/pokedex_provider.dart';
-import 'package:pokemons_app/providers/pokemon_provider.dart';
 import 'package:pokemons_app/widgets/widgets.dart';
-import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
   final List<PokemonEntry> pokemonEntries;
@@ -39,8 +36,6 @@ class HomeScreen extends StatelessWidget {
                 pokemonsList: pokemonsList,
               ),
               // Poodeu fer la prova d'afegir-ne uns quants, veureu com cada llista és independent
-              // MovieSlider(),
-              // MovieSlider(),
             ],
           ),
         ),

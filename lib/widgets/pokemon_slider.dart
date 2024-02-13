@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:pokemons_app/models/models.dart';
-import 'package:pokemons_app/providers/pokemon_provider.dart';
 
 final List<int> pokemonsRandomList = getRandomPokemon();
 
